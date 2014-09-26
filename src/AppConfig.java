@@ -10,15 +10,15 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan({"com.pluralsight."})
 public class AppConfig {
 
-    @Bean(name = "customerService")
-    public CustomerService getCustomerService ()
-    {
-        CustomerServiceImpl customerService = new CustomerServiceImpl();
-
-//        customerService.setCustomerRepository(getCustomerRepository());
-
-        return customerService;
-    }
+//    @Bean(name = "customerService")
+//    public CustomerService getCustomerService ()
+//    {
+//        CustomerServiceImpl customerService = new CustomerServiceImpl();
+//
+////        customerService.setCustomerRepository(getCustomerRepository());
+//
+//        return customerService;
+//    }
 
 //    @Bean(name = "customerRepository")
 //

@@ -11,7 +11,7 @@ import java.util.List;
  * Created by lenovo on 25/09/2014.
  */
 
-
+@Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
 
 
