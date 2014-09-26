@@ -5,20 +5,22 @@ import com.pluralsight.service.CustomerServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 @ComponentScan({"com.pluralsight."})
 public class AppConfig {
 
-//    @Bean(name = "customerService")
-//    public CustomerService getCustomerService ()
-//    {
-//        CustomerServiceImpl customerService = new CustomerServiceImpl();
-//
-////        customerService.setCustomerRepository(getCustomerRepository());
-//
-//        return customerService;
-//    }
+    @Bean(name = "customerService")
+    @Scope("singleton")
+    public CustomerService getCustomerService ()
+    {
+        CustomerServiceImpl customerService = new CustomerServiceImpl();
+
+//        customerService.setCustomerRepository(getCustomerRepository());
+
+        return customerService;
+    }
 
 //    @Bean(name = "customerRepository")
 //
