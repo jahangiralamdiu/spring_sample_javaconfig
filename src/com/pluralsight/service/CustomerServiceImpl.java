@@ -20,6 +20,7 @@ public class CustomerServiceImpl implements CustomerService {
     public CustomerServiceImpl() {
     }
 
+    @Autowired
     public void setCustomerRepository(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
